@@ -2,11 +2,11 @@ from flask import Flask, request,render_template
 from pymongo import MongoClient
 import subprocess as sp
 
-app=Flask("myiiec")
+app=Flask("dbapp")
 
 @app.route('/webapp')
 def myform():
-    return render_template("basic.html")
+    return render_template("/flask-mongod/templates/basic.html")
     
 
 
