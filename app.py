@@ -6,7 +6,7 @@ app=Flask("dbapp")
 
 @app.route('/webapp')
 def myform():
-    return render_template("/flask-mongod/templates/basic.html")
+    return render_template("basic.html")
     
 
 
